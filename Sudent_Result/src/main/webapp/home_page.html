@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #03a9f4;
+      overflow: hidden;
+      padding: 14px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: 16px;
+       border-radius: 30px;
+    }
+
+    .navbar a:hover {
+      background-color: #0288d1;
+    }
+
+    /* Form Container */
+    .form-container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 60px auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .submit-btn {
+      background-color: #03a9f4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .submit-btn:hover {
+      background-color: #0288d1;
+    }
+	.content {
+            padding: 40px;
+            text-align: center;
+        }
+        .welcome {
+            background-color: #e0f7fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .about-system {
+            background-color: #fff3e0;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+    /* Sections */
+    .section {
+      padding: 30px;
+      margin: 30px;
+      border-radius: 10px;
+      color: #333;
+    }
+    .features {
+      background-color: #e8f5e9;
+    }
+
+    .instructions-student {
+      background-color: #ffe0b2;
+    }
+
+    .instructions-faculty {
+      background-color: #ede7f6;
+    }
+
+    .testimonials {
+      background-color: #fce4ec;
+    }
+
+    .gallery {
+      background-color: #e3f2fd;
+      text-align: center;
+    }
+
+    .gallery img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    ul {
+      font-size: 18px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    blockquote {
+      max-width: 800px;
+      margin: 20px auto;
+      font-style: italic;
+      font-size: 17px;
+    }
+     @media (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .form-container, .section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  .gallery img {
+    width: 100%;
+  }
+}
+     
+    .footer {
+      background-color: #222222;
+      color: white;
+      text-align: center;
+      margin-top:357px;
+      margin-right:300px;
+      padding: 20px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .footer-links {
+      margin: 10px 0;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="home_page.html" target="main">Home</a>
+    <a href="marks_input.html"target="main">Upload Marks</a>
+    <a href="rsult.html" target="main">Result</a>
+     <a href="about.html"target="main" >About</a>
+    <a href="contact.html"target="main">Contact</a>
+  </div>
+	<div class="content">
+    <div class="welcome">
+        <h1>Welcome to the Student Marks Upload System</h1>
+        <p>This platform allows faculty members to upload student marks and students to check their academic performance with ease.</p>
+    </div>
+
+    <div class="about-system">
+        <h2>About the System</h2>
+        <p>Our system streamlines the process of uploading and viewing marks. It's built to support multiple departments and ensures secure access for students and staff alike.</p>
+    </div>
+</div>
+  <!-- Features -->
+  <div class="section features">
+    <h3>System Features</h3>
+    <ul>
+      <li>✅ Secure login for students and faculty</li>
+      <li>✅ Real-time marks upload and viewing</li>
+      <li>✅ Downloadable result sheets</li>
+      <li>✅ Role-based access and control</li>
+      <li>✅ User-friendly dashboard</li>
+    </ul>
+  </div>
+
+  <!-- Student Instructions -->
+  <div class="section instructions-student">
+    <h3>Instructions for Students</h3>
+    <p>
+      📌 Students can log in using their registered credentials.<br>
+      📌 Check your marks from the "Result" tab.<br>
+      📌 If you notice any discrepancies, please contact your faculty immediately.
+    </p>
+  </div>
+
+  <!-- Faculty Instructions -->
+  <div class="section instructions-faculty">
+    <h3>Instructions for Faculty</h3>
+    <p>
+      📝 Faculty members can upload marks via the "Upload Marks" section.<br>
+      ✅ Ensure all entries are correct before submission.<br>
+      📤 You can view past submissions and update entries if required.
+    </p>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="section testimonials">
+    <h3>What Our Users Say</h3>
+    <blockquote>
+      “This platform made result checking super easy. I no longer have to wait in long queues!”<br>
+      — Sudarshan, Computer Science Student
+    </blockquote>
+    <blockquote>
+      “Uploading and managing marks has become effortless. Great tool for educators!”<br>
+      — Mr. Sudarshan, Faculty Member
+    </blockquote>
+  </div>
+
+  <!-- Gallery -->
+  <div class="section gallery">
+    <h3>System Screenshot</h3>
+    <img src="img1.png" alt="System Screenshot">
+    <p>Live view of the marks upload interface.</p>
+  </div>
+
+ <div class="footer">
+    <div class="footer-links">
+      <a href="home_page.html" target="main">Home</a>
+      <a href="about.html"target="main" >About</a>
+      <a href="help.html"target="main">Help</a>
+    <a href="contact.html"target="main">Contact</a>
+    </div>
+    <p>&copy; 2025 Student Marks Upload System. All rights reserved.</p>
+    <p>Developed by Sudarshan</p>
+  </div>
+
+</body>
+</html>
+

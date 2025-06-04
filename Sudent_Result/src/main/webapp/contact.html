@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/css">
+       /* Navbar Styling */
+    .navbar {
+      background-color: #03a9f4;
+      overflow: hidden;
+      padding: 14px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: 16px;
+       border-radius: 30px;
+    }
+
+    .navbar a:hover {
+      background-color: #0288d1;
+    }
+   .footer {
+      background-color: #222222;
+      color: white;
+      text-align: center;
+      margin-top:357px;
+      margin-right:300px;
+      padding: 20px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .footer-links {
+      margin: 10px 0;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="home_page.html" target="main">Home</a>
+    <a href="marks_input.html"target="main">Upload Marks</a>
+    <a href="rsult.html" target="main">Result</a>
+    <a href="about.html"target="main" >About</a>
+    <a href="contact.html"target="main">Contact</a>
+  </div>
+
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-2xl w-full bg-white rounded-2xl shadow-lg p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+      <form class="space-y-5" action="contact.jsp" method="get">
+        <div>
+          <label class="block mb-1 font-medium" for="name">Name</label>
+          <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div>
+          <label class="block mb-1 font-medium" for="email">Email</label>
+          <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div>
+          <label class="block mb-1 font-medium" for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        </div>
+        <div>
+          <label class="block mb-1 font-medium" for="message">Message</label>
+          <textarea id="message" rows="5" name="message" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div> 
+   <!-- Footer -->
+ <div class="footer">
+    <div class="footer-links">
+      <a href="home_page.html" target="main">Home</a>
+      <a href="about.html"target="main" >About</a>
+    <a href="help.html"target="main">Help</a>
+    <a href="contact.html"target="main">Contact</a>
+    </div>
+    <p>&copy; 2025 Student Marks Upload System. All rights reserved.</p>
+    <p>Developed by Sudarshan</p>
+  </div>
+   
+</body>
+</html>
